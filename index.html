@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/css/custom.css">
+    <title>Sprint 2 | Pagina Web</title>
+</head>
+<body>
+    <header id="header" class="p-2 py-md-5">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-md p-0 ">
+                <!-- Logo -->
+                <a href="#" class="col-md-6 navbar-brand"><img src="img/logo-bookmark.svg" alt=""></a>
+                <!-- Boton menu hamburguesa -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Elementos del menu colapsable -->
+                <div class="col-md-6 collapse navbar-collapse " id="menu">
+                    <ul class="navbar-nav ms-auto d-flex justify-content-around w-100">
+                        <li class="nav-item text-uppercase fw-semibold"><a class="nav-link text-black text-center" href="#">Features</a></li>
+                        <li class="nav-item text-uppercase fw-semibold"><a class="nav-link text-black text-center" href="#">Pricing</a></li>
+                        <li class="nav-item text-uppercase fw-semibold"><a class="nav-link text-black text-center" href="#">Contact</a></li>
+                        <li class="nav-item text-uppercase "><a class="nav-link border-white rounded text-white fw-semibold bg-danger px-4" href="#">Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Seccion Hero -->
+    <main class="container col-12 col-lg-8 my-auto px-4 py-5 border">
+        <div class="row flex-lg-row-reverse align-items-center">
+            <div class="col-12 col-lg-6">
+                <img class="img-fluid d-block mx-lg-auto" src="img/illustration-hero.svg" alt="">
+                <div class="bg-blue w-100 h-100"></div>
+            </div>
+            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+                <h1 class="fs-1 fw-bold text-center ">A simple Bookmark Manager</h1>
+                <p class="lead text-center text-lg-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia assumenda tenetur recusandae, cumque alias at a corporis. Officia iste tempora sint aut aperiam rerum assumenda, eligendi nemo ad cum!</p>
+                <div class="d-flex justify-content-between justify-content-sm-center w-100  m-auto">
+                    <button type="button" class="btn btn-blue my-3  px-sm-4 ">Get in on chrome</button>
+                    <button type="button" class="btn btn-outline-blue my-3  px-sm-4">Get in on firefox</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

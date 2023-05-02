@@ -1,0 +1,345 @@
+/*================================================================
+----------------------> Seccion de colores<---------------------*/
+
+$primary: #fc5857;
+$secondary: #5266df;
+$dark: #242946;
+/*==============================================================*/
+/*---------> Personalización de variables nativas<--------------*/
+$bs-navbar-color: rgb(0, 0, 0);
+$card-box-shadow: 5px 5px 15px $secondary;
+$accordion-icon-color: $secondary;
+
+$accordion-button-active-bg: none;
+$accordion-button-active-color: none;
+$accordion-button-focus-box-shadow: none;
+$nav-tabs-link-hover-border-color: transparent;
+$navbar-light-hover-color: $primary;
+
+/*==============================================================*/
+/*------------------->Clases modificadas<---------------------------*/
+
+ul {
+  list-style: none;
+}
+
+.navbar-toggler {
+  &:active {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width);
+  }
+}
+.navbar-collapse.show {
+  background-color: #14213d;
+  opacity: 0.75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.navbar-collapse.show li {
+  border-top: 1px solid #ffffff3f;
+}
+
+.navbar-collapse.show a {
+  color: #ffffff;
+}
+.navbar-collapse.show li:nth-child(3) {
+  border-bottom: 1px solid #ffffff3f;
+  margin-bottom: 1rem;
+}
+.navbar-collapse.show li:last-child {
+  border: 2px solid #ffffff;
+}
+
+.navbar-collapse.show button {
+  background-color: inherit;
+  border: none;
+}
+
+.accordion-item h2 {
+  border: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background-color: #fff;
+  box-shadow: none;
+}
+
+
+
+.card {
+  box-shadow: 3px 3px 15px #7686e1;
+}
+
+.nav-tabs {
+  &:hover {
+    border: none;
+  }
+}
+
+.nav-link {
+  &:focus &:hover {
+    border: none;
+  }
+}
+
+.nav-tabs .nav-link {
+  &:active &:hover {
+    border-bottom: 3px solid $primary;
+  }
+}
+
+#tabs a{
+  &:active{
+    border-bottom: 3px solid red;
+  }
+  &:focus{
+    color:$primary;
+  }
+}
+
+.btn-danger{
+  &:active{
+    background-color: #fff !important;
+    color: $primary !important;
+    border: 1px solid $primary !important;
+  }
+}
+
+.btn-secondary{
+  &:active{
+    background-color: #fff !important;
+    color: $secondary !important;
+    border: 1px solid $secondary !important;
+  }
+}
+
+.btn-group > .btn-secondary{
+  &:active{
+    background-color: #fff !important;
+    color: $secondary !important;
+    border: 1px solid $secondary !important;
+  }
+}
+
+.btn-group > .btn-light{
+  &:active{
+    background-color: #fff !important;
+    color: $dark !important;
+    border: 1px solid $dark !important;
+  }
+}
+
+.accordion-button{
+  &:focus{
+    color: $primary;
+  }
+}
+/*=========================================*/
+/*------------->Clases propias<------------*/
+
+
+.z-index-1 {
+  z-index: 1;
+}
+.z-index-2 {
+  z-index: 2;
+}
+
+.top-25 {
+  top: 25%;
+}
+
+.top-75 {
+  top: 75%;
+}
+
+.start-25 {
+  left: 25%;
+}
+
+.start-75 {
+  left: 75%;
+}
+
+.bottom-25 {
+  bottom: 25%;
+}
+
+.bottom-75 {
+  bottom: 75%;
+}
+
+.end-25 {
+  right: 25%;
+}
+
+.end-75 {
+  right: 75%;
+}
+
+.pill-start {
+  border-radius: 50rem 0 0 50rem;
+}
+
+.pill-end {
+  border-radius: 0 50rem 50rem 0;
+}
+
+.vh-50{
+  height: 50vh;
+}
+// Mediaqueries
+
+@media (max-width: 768px) {
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-tabs .nav-link {
+    color: $secondary;
+      &:hover &:focus {
+      color: $primary;
+      border-bottom: 5px solid $primary;
+    }
+  }
+
+ 
+
+  #info{
+    display: none;
+  }
+}
+@media ((min-width: 768px) and (max-width:992px)) {
+  
+
+  #hero2 div{
+    right:50%;
+  }
+
+  #section-2 button {
+    display: none;
+  }
+
+  .nav-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+
+  #info{
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  
+  .nav-item .btn {
+    &:hover &:focus &:active {
+      background-color: #fff;
+      color: $primary;
+      border: 1px solid $primary;
+    }
+  }
+
+  .top-xl-25 {
+    top: 25%;
+  }
+  .top-xl-50 {
+    top: 50%;
+  }
+  .top-xl-75 {
+    top: 75%;
+  }
+
+  .top-xl-100 {
+    top: 100%;
+  }
+
+  .start-xl-25 {
+    left: 25%;
+  }
+  .start-xl-50 {
+    left: 50%;
+  }
+  .start-xl-75 {
+    left: 75%;
+  }
+  .start-xl-100 {
+    left: 100%;
+  }
+
+  .end-xl-25 {
+    right: 25%;
+  }
+  .end-xl-50 {
+    right: 50%;
+  }
+  .end-xl-75 {
+    right: 75%;
+  }
+  .end-xl-100 {
+    right: 100%;
+  }
+
+  .w-xl-25 {
+    width: 25% !important;
+  }
+  .w-xl-50 {
+    width: 50% !important;
+  }
+
+  .w-xl-75 {
+    width: 75% !important;
+  }
+
+  .w-xl-100 {
+    width: 100% !important;
+  }
+
+  .h-xl-25 {
+    height: 25%;
+  }
+  .h-xl-50 {
+    height: 50%;
+  }
+  .h-xl-75 {
+    height: 75%;
+  }
+  .h-xl-100 {
+    height: 100%;
+  }
+  #hero {
+    right: 7%;
+  }
+
+  .nabar-nav .nav-item .nav-link {
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .nav-tabs {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #info {
+    align-self: flex-start;
+  }
+
+  .vh-xl-50{
+    height: 50vh;
+  }
+}
+
+// @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap/scss/bootstrap";

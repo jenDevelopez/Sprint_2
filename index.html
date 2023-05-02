@@ -1,51 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/custom.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/custom.css" />
+    <link rel="icon" href="./img/favicon-32x32.png" />
     <title>Sprint 2 | Pagina Web</title>
-</head>
-<body>
-    <header id="header" class="p-2 py-md-5">
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container-md p-0 ">
-                <!-- Logo -->
-                <a href="#" class="col-md-6 navbar-brand"><img src="img/logo-bookmark.svg" alt=""></a>
-                <!-- Boton menu hamburguesa -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Elementos del menu colapsable -->
-                <div class="col-md-6 collapse navbar-collapse " id="menu">
-                    <ul class="navbar-nav ms-auto d-flex justify-content-around w-100">
-                        <li class="nav-item text-uppercase fw-semibold"><a class="nav-link text-black text-center" href="#">Features</a></li>
-                        <li class="nav-item text-uppercase fw-semibold"><a class="nav-link text-black text-center" href="#">Pricing</a></li>
-                        <li class="nav-item text-uppercase fw-semibold"><a class="nav-link text-black text-center" href="#">Contact</a></li>
-                        <li class="nav-item text-uppercase "><a class="nav-link border-white rounded text-white fw-semibold bg-danger px-4" href="#">Login</a></li>
-                    </ul>
+  </head>
+  <body>
+      <header class="container-fluid me-xl-5">
+          <nav class="navbar navbar-expand-xl ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo-bookmark.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="img/icon-hamburger.svg" alt="">
+              </button>
+              <div class="collapse navbar-collapse px-2 py-4 px-xl-0 " id="menu">
+                <ul class="navbar-nav mx-auto  w-100 d-xl-flex justify-content-xl-end">
+                  <li class="nav-item my-2 text-black ">
+                    <a class="nav-link  mx-xl-2 fw-bold text-uppercase text-center" aria-current="page" href="#">Feature</a>
+                  </li>
+                  <li class="nav-item my-2 text-black ">
+                    <a class="nav-link  mx-xl-2 fw-bold text-uppercase text-center " href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item my-2 text-black ">
+                    <a class="nav-link  mx-xl-2 fw-bold text-uppercase text-center " href="#">Contact</a>
+                  </li>
+                  <li class="nav-item my-2 rounded d-flex flex-column align-items-center ">
+                    <button id="button-header" type="button" class="btn btn-danger px-4 fw-bold text-uppercase  text-center">Login</button>
+                  </li>
+                </ul>
+                <div class="row">
+                  <div class="navbar-collapse col-4 mx-auto my-3">
+                    <img class="mx-2" src="img/icon-facebook.svg" alt="icono facebook">
+                    <img class="mx-2" src="img/icon-twitter.svg" alt="icono twitter">
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </nav>
+      </header>
+      <main>
+        <section id="section-1" class="container-fluid ">
+          <div class="row d-xl-flex flex-xl-row-reverse">
+            <div class="col-12 col-xl-6 position-relative">
+              <img class="img-fluid position-relative z-index-2" src="img/illustration-hero.svg" alt="">
+              <div class="bg-secondary w-100 h-75 pill-start top-25 start-25 position-absolute"></div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <h1 class="fw-bold text-center">A simple Bookmark Manager</h1>
+                <p class="text-black-50 fs-4 text-center mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa numquam facilis consequatur voluptate deserunt non voluptates recusandae aliquam repellendus dolor perspiciatis cumque minima, ut, adipisci magnam totam quasi perferendis?</p>
+                  <div class="btn-group  d-flex justify-content-center justify-content-xl-between   w-100 w-xl-75 mx-xl-auto">
+                      <button class="btn btn-secondary me-2 rounded fs-5 py-2 px-3 w-xl-50">Get it on Chrome</button>
+                      <button class="btn btn-light ms-2 rounded fs-5 py-2 px-3 w-xl-50">Get it on Firefox</button>
+                  </div>
+            </div>
+          </div>
+        </section>
+        <!-- Fin de seccion 1 -->
+        <section class="container-fluid" id="section-2">
+          <div class="row pt-4">
+            <div class="col-12 col-xl-8 mx-auto">
+              <h2 class="text-center fw-bold" id="features">Features</h2>
+              <p class="fs-4 text-black-50 w-75 mx-auto text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim soluta pariatur doloribus provident eligendi reprehenderit unde recusandae doloremque eveniet!</p>
+                <ul id="tabs" class="nav nav-tabs">
+                    <li class="nav-item">
+                      <a class="nav-link fs-4 text-dark" href="#">Simple Bookmarking</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-4 text-dark" href="#">Simple Bookmarking</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link fs-4 text-dark" href="#">Simple Bookmarking</a>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          
+          <div class="row my-5">
+            <div class="col-12 col-xl-5 position-relative pe-5" id="hero2">
+              <img class="img-fluid position-relative fondo-img z-index-2 start-0 ms-5 ms-xl-5" src="img/illustration-features-tab-1.svg" alt="">
+                <div id="" class="w-100 h-100 pill-end  bg-secondary position-absolute z-index-1 top-25 end-25 me-xl-5"></div>
+            </div>
+            <div class="col-12 col-xl-7 d-flex flex-column align-items-center justify-content-xl-start ps-5 mt-5 pt-3 pt-md-5">
+                <div class="w-xl-75 mx-xl-auto">
+                  <h3 class="text-center text-xl-start fw-semibold fs-1 ">Bookmark in one click</h3>
+                  <p class="text-center text-xl-start fs-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, alias ea debitis voluptatibus laboriosam nostrum rerum vel necessitatibus voluptate ab commodi consequuntur dolore, ducimus esse repudiandae aliquam eligendi quasi voluptas voluptatem quaerat. Nam, laudantium vitae!
+                  </p>
+                  <div class=""><a id="info" href="" class="btn btn-secondary text-center  rounded py-2 px-4">More info</a></div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- Seccion Hero -->
-    <main class="container col-12 col-lg-8 my-auto px-4 py-5 border">
-        <div class="row flex-lg-row-reverse align-items-center">
-            <div class="col-12 col-lg-6">
-                <img class="img-fluid d-block mx-lg-auto" src="img/illustration-hero.svg" alt="">
-                <div class="bg-blue w-100 h-100"></div>
-            </div>
-            <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
-                <h1 class="fs-1 fw-bold text-center ">A simple Bookmark Manager</h1>
-                <p class="lead text-center text-lg-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quia assumenda tenetur recusandae, cumque alias at a corporis. Officia iste tempora sint aut aperiam rerum assumenda, eligendi nemo ad cum!</p>
-                <div class="d-flex justify-content-between justify-content-sm-center w-100  m-auto">
-                    <button type="button" class="btn btn-blue my-3  px-sm-4 ">Get in on chrome</button>
-                    <button type="button" class="btn btn-outline-blue my-3  px-sm-4">Get in on firefox</button>
+          </div>
+        </section>
+        <!-- Fin de seccion 2 -->
+        <section class="container my-5" id="section-3">
+          <div class="row my-3">
+            <h2 class="text-center mt-5">Download the extension</h2>
+            <p class="text-center w-75 mx-auto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo rerum temporibus fugit officiis nemo ex.</p>
+          </div>
+          <div class="row d-xl-flex justify-content-start justify-content-xl-between vh-xl-50">
+            <div class="card-group w-100  p-0 ">
+              <div class="col-12 col-xl-4 card mx-2 w-xl-50  align-self-xl-start w-xl-75">
+                <img class="card-img w-25 w-xl-25 mx-auto pt-3" src="img/logo-chrome.svg" alt="">
+                <div class="card-body d-flex flex-column align-items-center w-100 justify-content-between">
+                  <h3 class="text-center fs-4">Add to Chrome</h3>
+                  <p class="text-center">Minimum version 62</p>
+                  <img class="w-75 my-3" src="img/bg-dots.svg" alt="">
+                  <a class="btn btn-secondary px-4 py-2 text-center" href="">Add & Install Extension</a>
                 </div>
+              </div>
+              <div class="col-12 col-xl-4 card mx-2 align-self-xl-center">
+                <img class="card-img w-25 w-xl-25 mx-auto pt-3" src="img/logo-firefox.svg" alt="">
+                <div class="card-body d-flex flex-column align-items-center w-100 justify-content-between">
+                  <h3 class="text-center fs-4">Add to Firefox</h3>
+                  <p class="text-center">Minimum version 55</p>
+                  <img class="w-75 my-3" src="img/bg-dots.svg" alt="">
+                  <a class="btn btn-secondary px-4 py-2 text-center" href="">Add & Install Extension</a>
+                </div>
+              </div>
+              <div class="col-12 col-xl-4 card mx-2 align-self-xl-end">
+                <img class="card-img w-25 w-xl-25 mx-auto pt-3" src="img/logo-opera.svg" alt="">
+                <div class="card-body d-flex flex-column align-items-center w-100 justify-content-between">
+                  <h3 class="text-center fs-4">Add to Opera</h3>
+                  <p class="text-center">Minimum version 46</p>
+                  <img class="w-75 my-3" src="img/bg-dots.svg" alt="">
+                  <a class="btn btn-secondary px-4 py-2 text-center" href="">Add & Install Extension</a>
+                </div>
+              </div>
             </div>
-        </div>
-    </main>
+          </div>
+        </section>
+        <!-- Fin sección 3 -->
+
+        <section class="container" id="section-4">
+          <div class="row">
+            <div class="col-12 col-xl-6 mx-auto">
+              <h2 class="text-center">Frequently Asked Questions</h2>
+              <p class="text-center fs-4 p-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, minus. Enim voluptates, voluptas atque repellendus ex deleniti obcaecati unde molestias!</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-xl-6 mx-auto">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      What is Bookmark
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero corrupti, explicabo aperiam nesciunt quia dicta.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      How can I request a new browser?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum repellendus vero libero corrupti quasi inventore.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Is there a mobile app?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo maxime neque, officia adipisci et fugiat..</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What about other Chromium browsers?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem dolor esse quam. Esse, illo quam.</div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center my-2">
+                  <a class="btn btn-secondary " href="">More Info</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Fin de sección 4 -->
+      </main>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
